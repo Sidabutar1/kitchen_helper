@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Kitchen Helper: Standar Mencuci</title>
+    <style>
+        /* Menggunakan font sistem untuk performa lebih cepat */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out forwards; /* Animasi dipercepat */
+        }
+        h1, h2 {
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2em;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 20px 0;
+        }
+        .warning {
+            background-color: #fffbe6;
+            border-left: 5px solid #f0ad4e;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            transition: transform 0.2s ease; /* Transisi lebih cepat dan ringan */
+        }
+        .warning:hover {
+            transform: translateY(-2px); /* Efek hover lebih sederhana */
+        }
+        strong {
+            color: #d9534f;
+        }
+        /* Styling untuk ikon SVG */
+        h1 svg, h2 svg, .back-link svg {
+            margin-right: 15px;
+            color: #5a6f84;
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0; /* Mencegah ikon menyusut */
+        }
+        .back-link svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0275d8;
+            font-weight: bold;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #d9534f;
+            transform: translateX(-5px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                display: block; /* Allow natural scrolling */
+            }
+            .container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" /></svg>1. Standar Mencuci (Washing)</h1>
+        <p>Mencuci bertujuan menghilangkan kotoran, pestisida, dan bakteri berbahaya dari bahan makanan sebelum diolah.</p>
+        
+        <hr>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 16.5A6.375 6.375 0 0012 22.5a6.375 6.375 0 004.5-6 6.375 6.375 0 00-4.5-6A6.375 6.375 0 007.5 16.5z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v6.75" /></svg>Prinsip Aliran</h2>
+        <p>Selalu cuci bahan makanan di bawah <strong>air mengalir</strong>, bukan direndam di wadah statis (kecuali untuk teknik khusus). Ini memastikan kotoran benar-benar terbuang dan tidak mengendap kembali.</p>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18h14V3M5 12h14" /></svg>Zonasi Wadah (Sink)</h2>
+        <p>Pisahkan bak cuci untuk sayuran/buah, bak untuk daging merah/ayam, dan bak untuk seafood. Tujuannya adalah untuk menghindari <strong>kontaminasi silang (cross-contamination)</strong> yang berbahaya.</p>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Sayuran Hijau</h2>
+        <p>Untuk sayuran seperti selada atau kangkung, rendam sebentar dengan air garam atau cairan pembersih khusus makanan (<em>food grade sanitizing solution</em>), lalu bilas kembali dengan air mengalir untuk merontokkan ulat, telur serangga, dan pasir yang menempel.</p>
+
+        <div class="warning">
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h7.5M8.25 12h7.5m-7.5 5.25h7.5m-1.5-13.5l-3.75 3.75-3.75-3.75" /></svg>Daging & Unggas (Poin Kritis)</h2>
+            <p>Berdasarkan standar keamanan pangan modern (seperti HACCP), daging sapi dan ayam <strong>tidak boleh dicuci</strong> dengan air. Proses pencucian dapat menyebarkan bakteri (seperti Salmonella atau Campylobacter) ke permukaan lain di dapur melalui percikan air.</p>
+            <p>Cukup keringkan permukaan daging dengan tisu dapur (<em>paper towel</em>) untuk membersihkannya. Jika terpaksa harus mencuci (misalnya untuk jeroan), lakukan dengan hati-hati dan pastikan area bak cuci dan sekitarnya langsung dibersihkan dan disanitasi setelahnya.</p>
+        </div>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12c0 4.142-3.358 7.5-7.5 7.5s-7.5-3.358-7.5-7.5 3.358-7.5 7.5-7.5 7.5 3.358 7.5 7.5z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 12l4.243 4.243M12 12l-4.243 4.243M12 12l4.243-4.243M12 12l-4.243-4.243" /></svg>Pengeringan</h2>
+        <p>Bahan yang sudah dicuci harus ditiriskan atau dikeringkan terlebih dahulu sebelum dipotong. Permukaan yang basah dapat membuat bahan cepat busuk, merusak tekstur saat dimasak, dan membuat pisau lebih licin saat memotong.</p>
+
+        <a href="index.html" class="back-link"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> Kembali ke Daftar Isi</a>
+    </div>
+
+</body>
+</html>

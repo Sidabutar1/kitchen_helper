@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Kitchen Helper: Standar Menimbang</title>
+    <style>
+        /* Menggunakan font sistem untuk performa lebih cepat */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2em;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 20px 0;
+        }
+        strong {
+            color: #d9534f;
+        }
+        /* Styling untuk ikon SVG */
+        h1 svg, h2 svg {
+            margin-right: 15px;
+            color: #5a6f84;
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0; /* Mencegah ikon menyusut */
+        }
+        .back-link svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0275d8;
+            font-weight: bold;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #d9534f;
+            transform: translateX(-5px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                display: block; /* Allow natural scrolling */
+            }
+            .container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.5l-6 6.25-6-6.25M6.75 12h10.5" /></svg>3. Standar Menimbang (Weighing)</h1>
+        <p>Menimbang adalah kunci utama agar rasa masakan konsisten dan biaya bahan (food cost) terjaga.</p>
+        
+        <hr>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0 0-4.992 0" /></svg>Kalibrasi Timbangan</h2>
+        <p>Pastikan timbangan digital berada di permukaan datar dan selalu disetel ke angka nol (0) setelah wadah kosong diletakkan (gunakan fungsi <strong>Tare</strong>).</p>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 10.5v-3a3 3 0 00-3-3h-1.5a3 3 0 00-3 3v3m12 0v-3a3 3 0 00-3-3h-1.5a3 3 0 00-3 3v3m12 0v4.5A2.25 2.25 0 0119.5 21h-15A2.25 2.25 0 012.25 18.75V10.5m12 0h-12" /></svg>Bahan Kering vs. Cair</h2>
+        <p>Bahan kering (tepung, gula, bumbu bubuk) wajib ditimbang menggunakan satuan berat (<strong>Gram/Kilogram</strong>). Bahan cair (susu, kaldu, minyak) diukur menggunakan gelas ukur dengan satuan volume (<strong>Mililiter/Liter</strong>).</p>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" /></svg>Bumbu Halus (Spices)</h2>
+        <p>Untuk bumbu dengan jumlah sangat kecil (garam, merica, baking powder), gunakan sendok takar standar dapur (<strong>tsp/tbsp</strong>), bukan sendok makan rumahan biasa.</p>
+
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125V6.375c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v.001c0 .621.504 1.125 1.125 1.125z" /></svg>Penyimpanan Hasil Timbangan</h2>
+        <p>Bahan yang sudah ditimbang sesuai porsi resep ditempatkan ke dalam wadah-wadah kecil (<em>stainless bowl</em> atau <em>plastic container</em>) yang siap masak.</p>
+
+        <a href="index.html" class="back-link"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> Kembali ke Daftar Isi</a>
+    </div>
+
+</body>
+</html>

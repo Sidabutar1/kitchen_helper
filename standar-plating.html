@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Kitchen Helper: Seni Plating</title>
+    <style>
+        /* Menggunakan font sistem untuk performa lebih cepat */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2em;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 20px 0;
+        }
+        .details-list dt {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+        .details-list dd {
+            margin-left: 20px;
+            padding-left: 10px;
+            border-left: 2px solid #e0e0e0;
+        }
+        /* Styling untuk ikon SVG */
+        h1 svg, h2 svg {
+            margin-right: 15px;
+            color: #5a6f84;
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0; /* Mencegah ikon menyusut */
+        }
+        .back-link svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0275d8;
+            font-weight: bold;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #d9534f;
+            transform: translateX(-5px);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                display: block; /* Allow natural scrolling */
+            }
+            .container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15.75l-9-5.25L3 15.75" /><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25l9 5.25 9-5.25" /><path stroke-linecap="round" stroke-linejoin="round" d="M21 15.75V8.25A2.25 2.25 0 0018.75 6h-13.5A2.25 2.25 0 003 8.25v7.5" /></svg>6. Seni Plating (Presentasi)</h1>
+        <p>Plating bukan sekadar menaruh makanan di piring, melainkan seni menyajikan cita rasa melalui visual yang seimbang dan menggugah selera.</p>
+        <hr>
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L12 15.25l5.571-3" /></svg>Elemen Dasar Penataan</h2>
+        <dl class="details-list">
+            <dt>Kerangka Visual & Fokus Utama</dt>
+            <dd>Ciptakan kerangka visual di mana komponen utama (protein) menjadi pusat perhatian.</dd>
+            <dt>Keseimbangan Warna & Tekstur</dt>
+            <dd>Gunakan warna alami bahan untuk menciptakan kontras dan hadirkan variasi tekstur (renyah vs. lembut).</dd>
+            <dt>Proporsi & Kesederhanaan</dt>
+            <dd>Pastikan ukuran porsi seimbang dengan piring. Terapkan prinsip "less is more" untuk kesan elegan.</dd>
+        </dl>
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM18 15.75l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 20l-1.035.259a3.375 3.375 0 00-2.456 2.456L18 23.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 20l1.035-.259a3.375 3.375 0 002.456-2.456L18 15.75z" /></svg>Teknik Presentasi Menarik</h2>
+        <dl class="details-list">
+            <dt>Pemilihan Piring</dt>
+            <dd>Gunakan piring dengan ukuran dan warna yang sesuai untuk menonjolkan makanan.</dd>
+            <dt>Pemberian Tinggi (Height)</dt>
+            <dd>Menambah ketinggian pada susunan makanan adalah cara efektif untuk menambah daya tarik visual.</dd>
+            <dt>Garnish yang Fungsional</dt>
+            <dd>Gunakan elemen yang bisa dimakan dan dapat menambah cita rasa hidangan.</dd>
+            <dt>Kebersihan Piring (Clean Plate)</dt>
+            <dd>Pastikan pinggiran piring benar-benar bersih dari noda sebelum disajikan.</dd>
+        </dl>
+
+        <a href="index.html" class="back-link"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> Kembali ke Daftar Isi</a>
+    </div>
+</body>
+</html>

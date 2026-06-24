@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Kitchen Helper: Manajemen Stok</title>
+    <style>
+        /* Menggunakan font sistem untuk performa lebih cepat */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2em;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 20px 0;
+        }
+        .details-list dt {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+        .details-list dd {
+            margin-left: 20px;
+            padding-left: 10px;
+            border-left: 2px solid #e0e0e0;
+        }
+        strong {
+            color: #d9534f;
+        }
+        /* Styling untuk ikon SVG */
+        h1 svg, h2 svg {
+            margin-right: 15px;
+            color: #5a6f84;
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0; /* Mencegah ikon menyusut */
+        }
+        .back-link svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0275d8;
+            font-weight: bold;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #d9534f;
+            transform: translateX(-5px);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                display: block; /* Allow natural scrolling */
+            }
+            .container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>7. Manajemen Stok (Inventory)</h1>
+        <p>Manajemen stok adalah kunci efisiensi operasional. Pengelolaan yang buruk dapat menyebabkan kerugian 4–10% dari total bahan makanan akibat pembusukan atau kadaluarsa.</p>
+        <hr>
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>Pengecekan Ketersediaan Bahan</h2>
+        <dl class="details-list">
+            <dt>Par Level (Batas Minimum)</dt>
+            <dd>Tentukan jumlah minimum stok yang harus selalu ada. Saat stok mencapai angka ini, segera lakukan pemesanan ulang (reorder).</dd>
+            <dt>Jadwal Inventaris</dt>
+            <dd>Lakukan perhitungan stok minimal dua kali sehari: pagi sebelum operasional (untuk cek ketersediaan) dan malam setelah tutup (untuk mencatat pemakaian).</dd>
+            <dt>Inspeksi Kedatangan</dt>
+            <dd>Saat bahan datang dari supplier, lakukan pengecekan langsung (on-the-spot check) terkait kuantitas, kualitas, dan suhu bahan sebelum diterima.</dd>
+        </dl>
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>Kondisi Penyimpanan agar Tetap Segar</h2>
+        <dl class="details-list">
+            <dt>Rotasi Stok (FIFO & FEFO)</dt>
+            <dd><strong>FIFO (First In, First Out):</strong> Gunakan bahan yang lebih dulu masuk. Letakkan stok lama di depan atau di atas agar terpakai lebih awal.<br><strong>FEFO (First Expired, First Out):</strong> Gunakan bahan dengan tanggal kadaluarsa terdekat, meskipun barang tersebut baru datang.</dd>
+            <dt>Zonasi Suhu</dt>
+            <dd><strong>Gudang Kering:</strong> Suhu antara 19–21°C untuk beras, tepung, atau bumbu kering.<br><strong>Chiller (0–10°C):</strong> Untuk sayuran, buah, susu, dan bahan segar jangka pendek.<br><strong>Freezer (-18°C ke bawah):</strong> Untuk penyimpanan beku jangka panjang seperti daging dan seafood.</dd>
+            <dt>Labeling & Higienitas</dt>
+            <dd>Setiap bahan harus diberi label tanggal penyimpanan. Simpan semua bahan minimal 15–20 cm (6–8 inci) di atas lantai untuk menghindari kontaminasi dan memudahkan pembersihan.</dd>
+        </dl>
+        <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" /></svg>Pencegahan Pemborosan (Food Waste)</h2>
+        <dl class="details-list">
+            <dt>Standardisasi Resep</dt>
+            <dd>Pastikan setiap staf memasak dengan takaran yang persis sama. Jika takaran berbeda-beda, proyeksi kebutuhan bahan tidak akan pernah akurat.</dd>
+            <dt>Optimalisasi Bahan</dt>
+            <dd>Manfaatkan bagian bahan yang masih layak untuk menu lain, misalnya sisa sayuran untuk membuat kaldu (stock) atau roti sisa untuk menjadi remah roti (breadcrumbs).</dd>
+            <dt>Monitoring Limbah</dt>
+            <dd>Catat jenis dan jumlah bahan yang terbuang setiap hari untuk mengevaluasi menu mana yang sering bersisa atau bahan apa yang terlalu banyak dipesan.</dd>
+        </dl>
+
+        <a href="index.html" class="back-link"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> Kembali ke Daftar Isi</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Food Preparation - SOP Dapur</title>
+    <style>
+        /* Menggunakan font sistem untuk performa lebih cepat */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        /* Style untuk setiap bagian SOP */
+        .sop-section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .sop-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2em;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 20px 0;
+        }
+        .warning {
+            background-color: #fffbe6;
+            border-left: 5px solid #f0ad4e;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-box {
+            background-color: #e7f3fe;
+            border-left: 5px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        /* Styling untuk daftar talenan berwarna */
+        .color-board-list {
+            list-style: none;
+            padding: 0;
+        }
+        .color-board-list li {
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .board-green { background-color: #d4edda; border-left: 5px solid #28a745; color: #155724; }
+        .board-red { background-color: #f8d7da; border-left: 5px solid #dc3545; color: #721c24; }
+        .board-yellow { background-color: #fff3cd; border-left: 5px solid #ffc107; color: #856404; }
+        .board-blue { background-color: #cce5ff; border-left: 5px solid #007bff; color: #004085; }
+        .board-white { background-color: #f8f9fa; border-left: 5px solid #6c757d; color: #343a40; border: 1px solid #dee2e6; }
+
+        /* Styling untuk daftar deskripsi */
+        .cuts-list dt, .details-list dt {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+        .cuts-list dd, .details-list dd {
+            margin-left: 20px;
+            padding-left: 10px;
+            border-left: 2px solid #e0e0e0;
+        }
+
+        strong {
+            color: #d9534f;
+        }
+        /* Styling untuk ikon SVG */
+        h1 svg, h2 svg {
+            margin-right: 15px;
+            color: #5a6f84;
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0275d8;
+            font-weight: bold;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+        .back-link svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+            color: #d9534f;
+            transform: translateX(-5px);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <section class="sop-section" id="mencuci">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" /></svg>1. Standar Mencuci (Washing)</h1>
+            <p>Mencuci bertujuan menghilangkan kotoran, pestisida, dan bakteri berbahaya dari bahan makanan sebelum diolah.</p>
+            
+            <hr>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 16.5A6.375 6.375 0 0012 22.5a6.375 6.375 0 004.5-6 6.375 6.375 0 00-4.5-6A6.375 6.375 0 007.5 16.5z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v6.75" /></svg>Prinsip Aliran</h2>
+            <p>Selalu cuci bahan makanan di bawah <strong>air mengalir</strong>, bukan direndam di wadah statis (kecuali untuk teknik khusus). Ini memastikan kotoran benar-benar terbuang dan tidak mengendap kembali.</p>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18h14V3M5 12h14" /></svg>Zonasi Wadah (Sink)</h2>
+            <p>Pisahkan bak cuci untuk sayuran/buah, bak untuk daging merah/ayam, dan bak untuk seafood. Tujuannya adalah untuk menghindari <strong>kontaminasi silang (cross-contamination)</strong> yang berbahaya.</p>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Sayuran Hijau</h2>
+            <p>Untuk sayuran seperti selada atau kangkung, rendam sebentar dengan air garam atau cairan pembersih khusus makanan (<em>food grade sanitizing solution</em>), lalu bilas kembali dengan air mengalir untuk merontokkan ulat, telur serangga, dan pasir yang menempel.</p>
+
+            <div class="warning">
+                <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h7.5M8.25 12h7.5m-7.5 5.25h7.5m-1.5-13.5l-3.75 3.75-3.75-3.75" /></svg>Daging & Unggas (Poin Kritis)</h2>
+                <p>Berdasarkan standar keamanan pangan modern (seperti HACCP), daging sapi dan ayam <strong>tidak boleh dicuci</strong> dengan air. Proses pencucian dapat menyebarkan bakteri ke permukaan lain di dapur melalui percikan air. Cukup keringkan permukaan daging dengan tisu dapur (<em>paper towel</em>). Jika terpaksa mencuci (misalnya untuk jeroan), lakukan dengan hati-hati dan pastikan area bak cuci dan sekitarnya langsung dibersihkan dan disanitasi setelahnya.</p>
+            </div>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12c0 4.142-3.358 7.5-7.5 7.5s-7.5-3.358-7.5-7.5 3.358-7.5 7.5-7.5 7.5 3.358 7.5 7.5z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 12l4.243 4.243M12 12l-4.243 4.243M12 12l4.243-4.243M12 12l-4.243-4.243" /></svg>Pengeringan</h2>
+            <p>Bahan yang sudah dicuci harus ditiriskan atau dikeringkan terlebih dahulu sebelum dipotong agar tidak merusak tekstur dan mempersingkat masa simpan.</p>
+        </section>
+
+        <section class="sop-section" id="mengupas">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048l-2.828-2.828A11.952 11.952 0 002.25 12c0 6.627 5.373 12 12 12s12-5.373 12-12c0-2.69-1.03-5.17-2.786-7.048l-2.828 2.828z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214l-4.636 4.636-4.636-4.636M12 21V9.75L16.5 6" /></svg>2. Standar Mengupas (Peeling)</h1>
+            <p>Mengupas berfokus pada efisiensi agar tidak banyak daging bahan makanan yang terbuang (<strong>food waste</strong>).</p>
+            
+            <hr>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" /></svg>Peralatan yang Tepat</h2>
+            <p>Gunakan <strong>Y-peeler</strong> atau <strong>straight peeler</strong> untuk umbi-umbian (kentang, wortel). Gunakan pisau kupas kecil (<strong>paring knife</strong>) untuk buah atau bahan berbentuk bulat.</p>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Teknik Keselamatan</h2>
+            <p>Arah kupasan harus selalu <strong>menjauhi tubuh</strong> atau jari tangan Anda untuk menghindari cedera.</p>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" /></svg>Manajemen Limbah</h2>
+            <p>Sediakan wadah khusus sampah organik tepat di sebelah papan talenan agar meja kerja tetap bersih dan rapi.</p>
+
+            <div class="info-box">
+                <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5a6 6 0 00-6-6a6 6 0 00-6 6v1.5a6 6 0 006 6z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v.01" /></svg>Pencegahan Oksidasi</h2>
+                <p>Bahan seperti kentang, apel, dan terong yang mudah berubah warna menjadi cokelat setelah dikupas harus segera direndam di air dingin (bisa ditambah sedikit perasan lemon atau garam).</p>
+            </div>
+        </section>
+
+        <section class="sop-section" id="menimbang">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.5l-6 6.25-6-6.25M6.75 12h10.5" /></svg>3. Standar Menimbang (Weighing)</h1>
+            <p>Menimbang adalah kunci utama agar rasa masakan konsisten dan biaya bahan (<strong>food cost</strong>) terjaga.</p>
+            
+            <hr>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0 0-4.992 0" /></svg>Kalibrasi Timbangan</h2>
+            <p>Pastikan timbangan digital berada di permukaan datar dan selalu disetel ke angka nol (0) setelah wadah kosong diletakkan (gunakan fungsi <strong>Tare</strong>).</p>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 10.5v-3a3 3 0 00-3-3h-1.5a3 3 0 00-3 3v3m12 0v-3a3 3 0 00-3-3h-1.5a3 3 0 00-3 3v3m12 0v4.5A2.25 2.25 0 0119.5 21h-15A2.25 2.25 0 012.25 18.75V10.5m12 0h-12" /></svg>Bahan Kering vs. Cair</h2>
+            <p>Bahan kering (tepung, gula, bumbu bubuk) wajib ditimbang menggunakan satuan berat (<strong>Gram/Kilogram</strong>). Bahan cair (susu, kaldu, minyak) diukur menggunakan gelas ukur dengan satuan volume (<strong>Mililiter/Liter</strong>).</p>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" /></svg>Bumbu Halus (Spices)</h2>
+            <p>Untuk bumbu dengan jumlah sangat kecil (garam, merica, baking powder), gunakan sendok takar standar dapur (<strong>tsp/tbsp</strong>), bukan sendok makan rumahan biasa.</p>
+
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125V6.375c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v.001c0 .621.504 1.125 1.125 1.125z" /></svg>Penyimpanan Hasil Timbangan</h2>
+            <p>Bahan yang sudah ditimbang sesuai porsi resep ditempatkan ke dalam wadah-wadah kecil (<em>stainless bowl</em> atau <em>plastic container</em>) yang siap masak.</p>
+        </section>
+
+        <section class="sop-section" id="memotong">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6.375 7.5h11.25c.621 0 1.125.504 1.125 1.125v5.25c0 .621-.504 1.125-1.125 1.125H6.375A1.125 1.125 0 015.25 13.875V8.625c0-.621.504-1.125 1.125-1.125z" /></svg>4. Standar Memotong (Cutting)</h1>
+            <p>Memotong dengan ukuran yang seragam memastikan bahan makanan matang dalam waktu yang bersamaan.</p>
+            <hr>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.5-10.5h-7a2.25 2.25 0 00-2.25 2.25v10.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25V9a2.25 2.25 0 00-2.25-2.25h-1.5" /></svg>Kode Warna Talenan (Cutting Board)</h2>
+            <ul class="color-board-list">
+                <li class="board-green"><strong>Hijau:</strong> Sayuran dan buah-buahan.</li>
+                <li class="board-red"><strong>Merah:</strong> Daging merah mentah (sapi/kambing).</li>
+                <li class="board-yellow"><strong>Kuning:</strong> Daging unggas mentah (ayam/bebek).</li>
+                <li class="board-blue"><strong>Biru:</strong> Makanan laut (seafood).</li>
+                <li class="board-white"><strong>Putih:</strong> Makanan matang, roti, atau keju.</li>
+            </ul>
+            <div class="warning">
+                <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>Posisi Tangan: The Claw</h2>
+                <p>Gunakan teknik <strong>"The Claw" (Cakar)</strong>. Jari tangan yang menahan bahan makanan ditekuk ke dalam agar punggung jari menjadi pembatas pisau, melindungi ujung jari dari sayatan.</p>
+            </div>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m-3.375 0h-3.375m3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm12 0h-2.25a2.25 2.25 0 01-2.25-2.25V6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5z" /></svg>Jenis Potongan Klasik</h2>
+            <dl class="cuts-list">
+                <dt>Julienne</dt>
+                <dd>Potongan korek api tipis (sekitar 2mm x 2mm x 4cm). Biasanya untuk wortel atau mentimun.</dd>
+                <dt>Batonnet</dt>
+                <dd>Potongan balok lebih tebal (sekitar 6mm x 6mm x 5cm). Biasanya untuk kentang goreng.</dd>
+                <dt>Brunoise</dt>
+                <dd>Potongan dadu sangat kecil (turunan dari Julienne, ukuran 2mm x 2mm x 2mm).</dd>
+                <dt>Macedoine/Dice</dt>
+                <dd>Potongan dadu sedang (sekitar 5mm hingga 1cm). Biasanya untuk sayuran sup.</dd>
+                <dt>Chiffonade</dt>
+                <dd>Teknik merajang halus daun-daunan yang digulung (seperti daun selada, kol, atau daun basil).</dd>
+            </dl>
+        </section>
+
+        <section class="sop-section" id="memasak">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048l-2.828-2.828A11.952 11.952 0 002.25 12c0 6.627 5.373 12 12 12s12-5.373 12-12c0-2.69-1.03-5.17-2.786-7.048l-2.828 2.828z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a.75.75 0 100-1.5.75.75 0 000 1.5z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 12.75a.75.75 0 100-1.5.75.75 0 000 1.5z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 100-1.5.75.75 0 000 1.5z" /></svg>5. Mengolah Makanan (Cooking)</h1>
+            <p>Penggunaan resep standar bertujuan agar rasa masakan konsisten setiap kali disajikan dan memudahkan perhitungan keuntungan.</p>
+            <hr>
+            <dl class="details-list">
+                <dt>Kepatuhan Resep</dt>
+                <dd>Ikuti instruksi resep dan takaran bahan secara tepat tanpa improvisasi yang tidak perlu.</dd>
+                <dt>Penggunaan Alat yang Tepat</dt>
+                <dd>Gunakan peralatan dapur yang dikhususkan untuk jenis makanan tertentu (misalnya, panci saus vs. panggangan steak).</dd>
+                <dt>Kontrol Suhu dan Waktu</dt>
+                <dd>Perhatikan suhu memasak dengan saksama agar makanan matang sempurna dan aman dikonsumsi.</dd>
+                <dt>Quality Control (QC)</dt>
+                <dd>Sebelum disajikan, koki wajib memeriksa kualitas melalui empat indikator utama: rasa, aroma, tampilan, dan suhu.</dd>
+            </dl>
+        </section>
+
+        <section class="sop-section" id="plating">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 15.75l-9-5.25L3 15.75" /><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25l9 5.25 9-5.25" /><path stroke-linecap="round" stroke-linejoin="round" d="M21 15.75V8.25A2.25 2.25 0 0018.75 6h-13.5A2.25 2.25 0 003 8.25v7.5" /></svg>6. Seni Plating (Presentasi)</h1>
+            <p>Plating bukan sekadar menaruh makanan di piring, melainkan seni menyajikan cita rasa melalui visual yang seimbang dan menggugah selera.</p>
+            <hr>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L12 15.25l5.571-3" /></svg>Elemen Dasar Penataan</h2>
+            <dl class="details-list">
+                <dt>Kerangka Visual & Fokus Utama</dt>
+                <dd>Ciptakan kerangka visual di mana komponen utama (protein) menjadi pusat perhatian.</dd>
+                <dt>Keseimbangan Warna & Tekstur</dt>
+                <dd>Gunakan warna alami bahan untuk menciptakan kontras dan hadirkan variasi tekstur (renyah vs. lembut).</dd>
+                <dt>Proporsi & Kesederhanaan</dt>
+                <dd>Pastikan ukuran porsi seimbang dengan piring. Terapkan prinsip "less is more" untuk kesan elegan.</dd>
+            </dl>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM18 15.75l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 20l-1.035.259a3.375 3.375 0 00-2.456 2.456L18 23.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 20l1.035-.259a3.375 3.375 0 002.456-2.456L18 15.75z" /></svg>Teknik Presentasi Menarik</h2>
+            <dl class="details-list">
+                <dt>Pemilihan Piring</dt>
+                <dd>Gunakan piring dengan ukuran dan warna yang sesuai untuk menonjolkan makanan.</dd>
+                <dt>Pemberian Tinggi (Height)</dt>
+                <dd>Menambah ketinggian pada susunan makanan adalah cara efektif untuk menambah daya tarik visual.</dd>
+                <dt>Garnish yang Fungsional</dt>
+                <dd>Gunakan elemen yang bisa dimakan dan dapat menambah cita rasa hidangan.</dd>
+                <dt>Kebersihan Piring (Clean Plate)</dt>
+                <dd>Pastikan pinggiran piring benar-benar bersih dari noda sebelum disajikan.</dd>
+            </dl>
+        </section>
+
+        <section class="sop-section" id="stok">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>7. Manajemen Stok (Inventory)</h1>
+            <p>Manajemen stok adalah kunci efisiensi operasional. Pengelolaan yang buruk dapat menyebabkan kerugian 4–10% dari total bahan makanan akibat pembusukan atau kadaluarsa.</p>
+            <hr>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>Pengecekan Ketersediaan Bahan</h2>
+            <dl class="details-list">
+                <dt>Par Level (Batas Minimum)</dt>
+                <dd>Tentukan jumlah minimum stok yang harus selalu ada. Saat stok mencapai angka ini, segera lakukan pemesanan ulang (reorder).</dd>
+                <dt>Jadwal Inventaris</dt>
+                <dd>Lakukan perhitungan stok minimal dua kali sehari: pagi sebelum operasional (untuk cek ketersediaan) dan malam setelah tutup (untuk mencatat pemakaian).</dd>
+                <dt>Inspeksi Kedatangan</dt>
+                <dd>Saat bahan datang dari supplier, lakukan pengecekan langsung (on-the-spot check) terkait kuantitas, kualitas, dan suhu bahan sebelum diterima.</dd>
+            </dl>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>Kondisi Penyimpanan agar Tetap Segar</h2>
+            <p>Penyimpanan yang benar memperpanjang umur simpan bahan dan mencegah pertumbuhan mikroorganisme.</p>
+            <dl class="details-list">
+                <dt>Rotasi Stok (FIFO & FEFO)</dt>
+                <dd><strong>FIFO (First In, First Out):</strong> Gunakan bahan yang lebih dulu masuk. Letakkan stok lama di depan atau di atas agar terpakai lebih awal.<br><strong>FEFO (First Expired, First Out):</strong> Gunakan bahan dengan tanggal kadaluarsa terdekat, meskipun barang tersebut baru datang.</dd>
+                <dt>Zonasi Suhu</dt>
+                <dd><strong>Gudang Kering:</strong> Suhu antara 19–21°C untuk beras, tepung, atau bumbu kering.<br><strong>Chiller (0–10°C):</strong> Untuk sayuran, buah, susu, dan bahan segar jangka pendek.<br><strong>Freezer (-18°C ke bawah):</strong> Untuk penyimpanan beku jangka panjang seperti daging dan seafood.</dd>
+                <dt>Labeling & Higienitas</dt>
+                <dd>Setiap bahan harus diberi label tanggal penyimpanan. Simpan semua bahan minimal 15–20 cm (6–8 inci) di atas lantai untuk menghindari kontaminasi dan memudahkan pembersihan.</dd>
+            </dl>
+            <h2><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" /></svg>Pencegahan Pemborosan (Food Waste)</h2>
+            <p>Food waste di dapur biasanya disebabkan oleh overproduction, perencanaan stok yang buruk, atau kesalahan teknik memasak.</p>
+            <dl class="details-list">
+                <dt>Standardisasi Resep</dt>
+                <dd>Pastikan setiap staf memasak dengan takaran yang persis sama. Jika takaran berbeda-beda, proyeksi kebutuhan bahan tidak akan pernah akurat.</dd>
+                <dt>Optimalisasi Bahan</dt>
+                <dd>Manfaatkan bagian bahan yang masih layak untuk menu lain, misalnya sisa sayuran untuk membuat kaldu (stock) atau roti sisa untuk menjadi remah roti (breadcrumbs).</dd>
+                <dt>Monitoring Limbah</dt>
+                <dd>Catat jenis dan jumlah bahan yang terbuang setiap hari untuk mengevaluasi menu mana yang sering bersisa atau bahan apa yang terlalu banyak dipesan.</dd>
+            </dl>
+        </section>
+
+        <a href="index.html" class="back-link"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> Kembali ke Daftar Isi</a>
+    </div>
+
+</body>
+</html>
