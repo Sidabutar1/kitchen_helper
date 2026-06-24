@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Paket Menu Forklik</title>
+    <style>
+        /* Menggunakan font sistem untuk performa lebih cepat */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .package-section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .package-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2em;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-top: 20px;
+        }
+        .category-info {
+            background-color: #e9ecef;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+            border-left: 5px solid #6c757d;
+        }
+        .syarat-ketentuan {
+            background-color: #fffbe6;
+            border-left: 5px solid #f0ad4e;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            font-weight: 600;
+        }
+        /* Styling untuk ikon SVG */
+        h1 svg, h2 svg {
+            margin-right: 15px;
+            color: #5a6f84;
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0275d8;
+            font-weight: bold;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+        .back-link svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+            color: #d9534f;
+            transform: translateX(-5px);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body { padding: 15px; }
+            .container { padding: 25px 20px; }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.4em; }
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+            .container { padding: 20px 15px; }
+            h1 { font-size: 1.6em; }
+            h2 { font-size: 1.3em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>Detail Paket Menu Forklik</h1>
+        <p>Berikut adalah rincian detail dari masing-masing paket menu Forklik yang dibedah satu per satu.</p>
+
+        <div class="package-section">
+            <h2>1. Paket Hemat Rice Bowl</h2>
+            <p>Paket ini ditujukan sebagai pilihan makan hemat dan lezat untuk individu.</p>
+            <ul>
+                <li><strong>Harga:</strong> Rp 39.500 nett</li>
+                <li><strong>Isi Paket:</strong> Mendapatkan 1 pilihan menu Rice Bowl dan sudah termasuk minuman Sweet Ice Tea.</li>
+                <li><strong>Pilihan Rice Bowl:</strong> Anda dapat memilih salah satu dari Chicken Katsu Saus Tar-tar, Ayam Saus Mentega, Ayam Geprek, atau Ayam Pedas Manis.</li>
+            </ul>
+        </div>
+
+        <div class="package-section">
+            <h2>2. Pahe Rice Bowl</h2>
+            <p>Paket ini juga menawarkan menu rice bowl namun dilengkapi dengan beberapa pilihan minuman dan fasilitas hiburan gratis.</p>
+            <ul>
+                <li><strong>Harga:</strong> Rp 59.000 (59K) nett</li>
+                <li><strong>Pilihan Makanan:</strong> Rice Bowl Ayam Pedas Manis atau Ayam Geprek.</li>
+                <li><strong>Pilihan Minuman:</strong> Sweet Ice Tea atau Lemon Tea.</li>
+                <li><strong>Fasilitas Gratis:</strong> Venue, Sound System, Board Game, dan Billiard 1 Jam Berkelipatan (Maksimal 3 Jam).</li>
+            </ul>
+            <div class="syarat-ketentuan"><strong>Syarat & Ketentuan:</strong> Wajib memenuhi pesanan minimal 10 pax, durasi acara maksimal 3 jam, dan pengunjung dilarang membawa makanan dari luar.</div>
+        </div>
+
+        <div class="package-section">
+            <h2>3. Forklik A La Carte Package</h2>
+            <p>Paket ini menawarkan hidangan per piring dengan tiga kategori menu utama dan dilengkapi fasilitas acara.</p>
+            <ul>
+                <li><strong>Fasilitas Gratis:</strong> Venue, Sound System, Projector + Screen, Karaoke, dan Board Game.</li>
+            </ul>
+            <div class="syarat-ketentuan"><strong>Syarat & Ketentuan:</strong> Pemesanan minimal 10 pax, durasi maksimal 3 jam, dan tidak diperbolehkan membawa makanan dari luar.</div>
+            
+            <h3>Paket Nasgor (75K nett)</h3>
+            <ul><li>Terdiri dari satu pilihan makanan (Nasi Goreng Forklik, Nasi Goreng Ayam Crunchy, atau Nasi Goreng Singapore) ditambah satu pilihan minuman (Sweet Ice Tea atau Lemon Tea).</li></ul>
+            
+            <h3>Paket Ayam (75K nett)</h3>
+            <ul><li>Terdiri dari satu pilihan makanan (Nasi Ayam Penyet atau Nasi Ayam Geprek Sambal Merah) ditambah satu pilihan minuman (Sweet Ice Tea atau Lemon Tea).</li></ul>
+
+            <h3>Paket Beef (93K nett)</h3>
+            <ul><li>Terdiri dari satu pilihan makanan (Nasi Iga Asam Garang, Nasi Soto Betawi, Nasi Sop Iga, atau Nasi Sop Daging) ditambah satu pilihan minuman (Sweet Ice Tea atau Lemon Tea).</li></ul>
+        </div>
+
+        <div class="package-section">
+            <h2>4. Forklik Buffet Package</h2>
+            <p>Ini adalah paket prasmanan yang dirancang khusus untuk acara berskala lebih besar dengan fasilitas lengkap.</p>
+            <ul>
+                <li><strong>Fasilitas Gratis:</strong> Venue, Sound System, Projector + Screen, Karaoke, dan Board Game.</li>
+            </ul>
+            <div class="syarat-ketentuan"><strong>Syarat & Ketentuan:</strong> Pemesanan minimal 30 pax, durasi penggunaan tempat maksimal 4 jam, dan dilarang membawa makanan dari luar.</div>
+
+            <h3>Package 85K nett</h3>
+            <ul>
+                <li><strong>Carbo (Pilih 2):</strong> Nasi Putih, Nasi Goreng, Kwetiau Goreng, Mie Goreng.</li>
+                <li><strong>Appetizer (Pilih 1):</strong> Garlic Tofu, Pangsit Ayam Goreng, Tempe Goreng Tepung, Bakwan Sayur.</li>
+                <li><strong>Chicken (Pilih 1):</strong> Ayam Pedas Manis, Ayam Kuning Kemangi, Ayam Saus Mentega, Ayam Lada Garam.</li>
+                <li><strong>Veggie (Pilih 1):</strong> Cah Baby Buncis, Garlic Pakcoy, Cah Kailan.</li>
+                <li><strong>Menu Pelengkap:</strong> Condiment (Kerupuk, Sambal Merah), Minuman (Sweet Ice Tea, Mineral Water), dan Dessert (Puding).</li>
+            </ul>
+
+            <h3>Package 95K nett</h3>
+            <ul>
+                <li>Untuk pilihan karbohidrat, hidangan pembuka (appetizer), sayuran (veggie), serta pelengkapnya sama persis dengan paket 85K.</li>
+                <li><strong>Perbedaannya:</strong> Lauk protein utamanya menggunakan daging sapi (Beef - Pilih 1), yaitu Beef Black Pepper atau Beef Teriyaki.</li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="back-link"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> Kembali ke Daftar Isi</a>
+    </div>
+
+</body>
+</html>
